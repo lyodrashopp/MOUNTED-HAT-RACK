@@ -1,120 +1,158 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+  <link rel="icon" href="data:image/webp;base64,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">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRENEY-4Pcs CD Renda Pinggang Karet Huruf-Renda</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>WALL MOUNTED HAT RACK, DISPLAY HANGER</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root { --primary: #002e1c; --bg: #f5f5f5; --white: #fff; --border: #f2f2f2; --text-muted: #888; }
+        :root { 
+            --primary: #000a94; /* Classic Vintage Tone */
+            --accent: #C5A059; /* Muted Gold */
+            --bg-body: #EDEADB; /* Rich Antique Paper */
+            --bg-container: #FDFCF9; /* Lighter Cream */
+            --text-main: #242221; 
+            --text-muted: #64615E;
+            --border: #CFC9B8;
+        }
         * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color: transparent; }
-        body { font-family: 'Inter', sans-serif; background: var(--bg); color: #333; }
-        .container { max-width: 500px; margin: 0 auto; background: var(--white); min-height: 100vh; position: relative; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg-body); color: var(--text-main); -webkit-font-smoothing: antialiased; }
+        .container { max-width: 500px; margin: 0 auto; background: var(--bg-container); min-height: 100vh; position: relative; border-left: 1px solid rgba(0,0,0,0.12); border-right: 1px solid rgba(0,0,0,0.12); box-shadow: 0 0 40px rgba(0,0,0,0.08); }
         
-        .product-swiper { width: 100%; aspect-ratio: 1/1; background: #fafafa; margin-top: 0; }
+        .product-swiper { width: 100%; aspect-ratio: 1/1; background: #E5E1D2; border-bottom: 3px double var(--border); position: relative; }
+        .product-swiper::after { content: ''; position: absolute; inset: 0; pointer-events: none; border: 14px solid var(--bg-container); z-index: 5; }
         
-        /* Flash Sale bar */
-        .flash-sale-bar { color: white; display: flex; align-items: center; justify-content: space-between; padding: 12px 15px; }
+        /* Flash Sale bar - Vintage Ribbon */
+        .flash-sale-bar { background: var(--text-main); color: var(--bg-container); display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; border-bottom: 4px double var(--accent); position: relative; z-index: 10; }
         .fs-left { display: flex; flex-direction: column; }
-        .fs-label { font-size: 16px; font-weight: 900; text-transform: uppercase; font-style: italic; }
-        .fs-subtext { font-size: 9px; font-weight: 700; opacity: 0.9; }
-        .fs-right { display: flex; flex-direction: column; align-items: flex-end; }
-        .fs-timer-label { font-size: 10px; font-weight: 700; margin-bottom: 4px; }
-        .timer-box { background: rgba(0,0,0,0.3); padding: 3px 8px; border-radius: 3px; font-size: 13px; font-weight: 900; font-family: monospace; }
+        .fs-label { font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; text-transform: uppercase; font-style: italic; letter-spacing: 1.5px; color: var(--accent); }
+        .fs-subtext { font-size: 9px; font-weight: 700; opacity: 0.9; letter-spacing: 2px; color: var(--bg-container); text-transform: uppercase; margin-top: 3px; }
+        .fs-right { display: flex; flex-direction: column; align-items: flex-end; justify-content: center; }
+        .fs-timer-label { font-family: 'Playfair Display', serif; font-size: 11px; font-weight: 600; margin-bottom: 4px; color: var(--border); font-style: italic; }
+        .timer-box { background: transparent; color: var(--accent); padding: 0; font-size: 15px; font-weight: 700; font-family: 'Plus Jakarta Sans', sans-serif; letter-spacing: 1.5px; }
         
-        .p-info { padding: 15px; border-bottom: 1px solid var(--border); background: #fff; }
-        .p-price-now { font-size: 1.8rem; color: var(--primary); font-weight: 800; }
-        .p-price-was { font-size: 0.85rem; color: #999; text-decoration: line-through; }
-        .p-discount-tag { background: #fee2e2; color: #ef4444; font-size: 11px; font-weight: 800; padding: 2px 6px; border-radius: 4px; }
-        .p-title { font-size: 1rem; font-weight: 600; line-height: 1.4; margin-bottom: 10px; }
+        .p-info { padding: 40px 24px 28px; background: transparent; position: relative; text-align: center; }
+        .p-price-row { display: flex; align-items: center; justify-content: center; gap: 14px; margin-bottom: 18px; }
+        .p-price-now { font-family: 'Playfair Display', serif; font-size: 2.8rem; color: var(--primary); font-weight: 700; line-height: 1; }
+        .p-price-was { font-size: 1.1rem; color: var(--text-muted); text-decoration: line-through; font-family: 'Playfair Display', serif; font-style: italic; }
+        .p-discount-tag { background: var(--primary); color: #fff; font-size: 10px; font-weight: 700; padding: 5px 10px; text-transform: uppercase; letter-spacing: 1.5px; box-shadow: 2px 2px 0 rgba(0,0,0,0.15); font-family: 'Plus Jakarta Sans', sans-serif; }
+        .p-title { font-family: 'Playfair Display', serif; font-size: 1.9rem; font-weight: 700; line-height: 1.3; margin-bottom: 22px; color: var(--text-main); letter-spacing: -0.5px; }
         
         /* Store Section Bar */
-        .shop-section { display: flex; align-items: center; gap: 12px; padding: 15px; border-bottom: 8px solid #f1f1f1; background: #fff; }
-        .shop-logo { width: 45px; height: 45px; border-radius: 50%; object-fit: cover; border: 1px solid #eee; }
+        .shop-section { display: flex; align-items: center; gap: 16px; padding: 22px 24px; margin: 0; background: var(--bg-body); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+        .shop-logo { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 1px solid var(--border); filter: sepia(0.25) contrast(1.1); padding: 3px; background: var(--bg-container); }
         .shop-info { flex: 1; }
-        .shop-name { font-size: 14px; font-weight: 700; color: #333; }
-        .shop-meta { font-size: 11px; color: #888; margin-top: 2px; }
-
-        .s-section { padding: 15px; border-bottom: 8px solid #f1f1f1; background: #fff; }
-        .s-section-title { font-weight: 800; font-size: 13px; color: #333; text-transform: uppercase; }
+        .shop-name { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--text-main); }
+        .shop-meta { font-size: 12px; color: var(--text-muted); margin-top: 4px; font-style: italic; font-family: 'Playfair Display', serif; }
+        
+        .s-section { padding: 36px 24px; border-bottom: 1px solid var(--border); background: transparent; }
+        .s-section-title { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 3px; border-bottom: 1px solid var(--accent); padding-bottom: 10px; margin-bottom: 26px; display: inline-block; }
         
         /* Horizontal Variants Scroll */
-        .variant-scroll-container { display: flex; gap: 10px; overflow-x: auto; padding: 5px 0 15px; scrollbar-width: none; -ms-overflow-style: none; }
+        .variant-scroll-container { display: flex; gap: 16px; overflow-x: auto; padding-bottom: 12px; scrollbar-width: none; }
         .variant-scroll-container::-webkit-scrollbar { display: none; }
-        .variant-card { flex: 0 0 100px; border: 1px solid #eee; border-radius: 4px; padding: 4px; position: relative; cursor: pointer; transition: 0.2s; background: #fff; }
-        .v-card-img { width: 100%; aspect-ratio: 1/1; overflow: hidden; border-radius: 2px; margin-bottom: 6px; }
-        .v-card-img img { width: 100%; height: 100%; object-fit: cover; }
-        .v-card-name { font-size: 11px; text-align: center; color: #555; font-weight: 500; height: 32px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-        .v-check { position: absolute; top: 0; right: 0; background: var(--primary); color: #fff; width: 16px; height: 16px; border-radius: 0 3px 0 8px; font-size: 9px; display: none; align-items: center; justify-content: center; z-index: 2; }
-        .variant-card.active { border-color: var(--primary); }
-        .variant-card.active .v-card-name { color: var(--primary); font-weight: 700; }
+        .variant-card { flex: 0 0 115px; border: 1px solid var(--border); padding: 7px; position: relative; cursor: pointer; transition: 0.3s; background: var(--bg-container); }
+        .v-card-img { width: 100%; aspect-ratio: 1/1; overflow: hidden; margin-bottom: 10px; border: 1px solid var(--border); }
+        .v-card-img img { width: 100%; height: 100%; object-fit: cover; filter: sepia(0.2) contrast(1.05); transition: 0.5s; }
+        .variant-card:hover .v-card-img img { filter: sepia(0) contrast(1.1); transform: scale(1.05); }
+        .v-card-name { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 10px; text-align: center; color: var(--text-muted); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        .v-check { position: absolute; top: 0; right: 0; background: var(--accent); color: #fff; width: 22px; height: 22px; font-size: 10px; display: none; align-items: center; justify-content: center; z-index: 2; border-bottom-left-radius: 2px; }
+        .variant-card.active { border-color: var(--primary); padding: 6px; border-width: 2px; box-shadow: 4px 4px 0 rgba(var(--primary), 0.1); }
+        .variant-card.active .v-card-name { color: var(--primary); }
         .variant-card.active .v-check { display: flex; }
-
-        .shipping-box { display: flex !important; align-items: center; gap: 12px; padding: 15px; border-bottom: 8px solid #f1f1f1; background: #fff; cursor: pointer; }
-        .shipping-icon { color: #26aa99; font-size: 18px; }
+        
+        .shipping-box { display: flex; align-items: center; gap: 16px; padding: 24px; background: rgba(197, 160, 89, 0.06); border-bottom: 1px solid var(--border); cursor: pointer; }
+        .shipping-icon { color: var(--accent); font-size: 22px; }
         .shipping-text { flex: 1; }
-        .shipping-title { font-size: 12px; font-weight: 600; color: #26aa99; display: flex; align-items: center; gap: 6px; }
-        .shipping-desc { font-size: 11px; color: #888; margin-top: 2px; }
+        .shipping-title { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 700; color: var(--text-main); margin-bottom: 4px; font-style: italic; }
+        .shipping-desc { font-size: 12px; color: var(--text-muted); font-weight: 500; }
         
         /* Features Section */
-        .s-section-features { background: #fff; border-bottom: 8px solid #f1f1f1; }
-        .features-vertical-list { display: flex; flex-direction: column; }
-        .feature-vertical-item { padding: 0 0 30px 0; }
-        .feature-img-large { width: 100%; height: auto; display: block; }
-        .feature-content-large { padding: 15px 20px; }
-        .feature-title-large { font-size: 15px; font-weight: 800; color: #333; margin-bottom: 8px; }
-        .feature-desc-large { font-size: 12px; color: #666; line-height: 1.6; }
-
-        .dropdown-trigger { padding: 15px; display: flex; justify-content: space-between; align-items: center; font-weight: 700; font-size: 13px; cursor: pointer; color: #444; border-bottom: 1px solid #f8f8f8;}
-        .dropdown-content { padding: 0 15px 15px; font-size: 13px; color: #666; white-space: pre-wrap; line-height: 1.6; display: none; }
-        .dropdown-content.active { display: block; }
+        .s-section-features { background: transparent; border-bottom: 1px solid var(--border); padding: 40px 0; }
+        .vintage-divider { font-family: 'Playfair Display', serif; font-size: 13px; font-weight: 700; text-align: center; color: var(--accent); letter-spacing: 2px; margin-bottom: 32px; text-transform: uppercase; }
+        .features-vertical-list { display: flex; flex-direction: column; gap: 0; }
+        .feature-vertical-item { padding: 0 24px 36px; border-bottom: 1px dashed var(--border); margin-bottom: 36px; }
+        .feature-vertical-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        .feature-img-large { width: 100%; height: auto; display: block; filter: sepia(0.18) contrast(1.05); border: 8px solid var(--bg-body); box-shadow: 0 5px 18px rgba(0,0,0,0.06); margin-bottom: 24px; }
+        .feature-content-large { padding: 0; text-align: center; }
+        .feature-title-large { font-family: 'Playfair Display', serif; font-size: 23px; font-weight: 700; color: var(--primary); margin-bottom: 12px; line-height: 1.25; }
+        .feature-desc-large { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13.5px; color: var(--text-muted); line-height: 1.7; font-weight: 500; }
         
-        .s-testimonial-item { padding: 15px 0; border-bottom: 1px solid #f8f8f8; }
-        .st-header { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; }
-        .st-avatar { width: 32px; height: 32px; border-radius: 50%; border: 1px solid #eee; }
-        .st-name { font-size: 12px; font-weight: 600; color: #333; }
-        .st-stars { color: #f1c40f; font-size: 9px; margin: 2px 0; }
-        .st-meta { font-size: 10px; color: #999; }
-        .st-text { font-size: 12px; color: #444; line-height: 1.6; margin-bottom: 10px; }
-        .st-media img { width: 80px; height: 80px; object-fit: cover; border-radius: 6px; border: 1px solid #eee; }
+        .dropdown-trigger { padding: 24px; display: flex; justify-content: space-between; align-items: center; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; cursor: pointer; color: var(--text-main); border-bottom: 1px solid var(--border); background: var(--bg-body); transition: background 0.2s; }
+        .dropdown-trigger:hover { background: #E4DFD2; }
+        .dropdown-content { padding: 0 24px 36px; font-size: 14px; color: var(--text-main); white-space: pre-wrap; line-height: 1.8; display: none; background: transparent; font-weight: 500; }
+        .dropdown-content.active { display: block; padding-top: 24px; }
         
-        .lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 2000; display: none; justify-content: center; align-items: center; padding: 20px; }
-        .lightbox-container { background: transparent; padding: 0; border-radius: 12px; width: 70%; max-width: 350px; position: relative; }
-        .lightbox img { width: 100%; height: auto; border-radius: 12px; display: block; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
-        .lightbox-close { position: absolute; top: -40px; right: 0; color: #fff; font-size: 32px; cursor: pointer; }
-
-        /* Variant Summary styles - FIXED SMALLER SIZING */
-        .summary-card { display: flex; align-items: center; gap: 10px; padding: 10px; border: 1px solid #f0f0f0; border-radius: 8px; margin-bottom: 15px; background: #fafafa; }
-        .summary-img { width: 48px; height: 48px; border-radius: 4px; object-fit: cover; border: 1px solid #eee; flex-shrink: 0; }
+        .s-testimonial-item { padding: 24px 0; border-bottom: 1px dashed var(--border); }
+        .s-testimonial-item:last-child { border-bottom: none; padding-bottom: 0; }
+        .st-header { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 16px; }
+        .st-avatar { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--border); filter: sepia(0.2); }
+        .st-user-info { flex: 1; }
+        .st-name { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 700; color: var(--text-main); }
+        .st-stars { color: var(--accent); font-size: 11px; margin: 4px 0; letter-spacing: 2.5px; }
+        .st-meta { font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1.5px; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; }
+        .st-text { font-size: 16px; color: var(--text-main); line-height: 1.7; margin-bottom: 16px; font-style: italic; font-family: 'Playfair Display', serif; }
+        .st-media img { width: 84px; height: 84px; object-fit: cover; border: 4px solid var(--bg-body); box-shadow: 0 3px 10px rgba(0,0,0,0.06); filter: sepia(0.12); }
+        
+        .lightbox { position: fixed; inset: 0; background: rgba(30, 28, 27, 0.96); z-index: 2000; display: none; justify-content: center; align-items: center; padding: 20px; }
+        .lightbox-container { background: transparent; padding: 0; width: 100%; max-width: 450px; position: relative; }
+        .lightbox img { width: 100%; height: auto; display: block; border: 10px solid var(--bg-body); box-shadow: 0 25px 60px rgba(0,0,0,0.7); }
+        .lightbox-close { position: absolute; top: -50px; right: 0; color: var(--bg-body); font-size: 36px; cursor: pointer; transition: 0.2s; }
+        
+        /* Variant Summary styles */
+        .summary-card { display: flex; align-items: center; gap: 16px; padding: 16px; border: 1px solid var(--border); margin-bottom: 24px; background: var(--bg-body); box-shadow: 4px 4px 0 rgba(0,0,0,0.05); }
+        .summary-img { width: 56px; height: 56px; object-fit: cover; border: 1px solid var(--border); flex-shrink: 0; padding: 2px; background: var(--bg-container); }
         .summary-info { flex: 1; min-width: 0; }
-        .summary-title { font-size: 12px; font-weight: 700; color: #333; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-        .summary-variant-name { font-size: 10px; font-weight: 600; color: #888; background: #eee; padding: 2px 8px; border-radius: 3px; display: inline-block; margin-top: 3px; }
-        .summary-check { margin-left: 8px; color: #26aa99; font-size: 16px; }
-
+        .summary-title { font-family: 'Playfair Display', serif; font-size: 15px; font-weight: 700; color: var(--text-main); margin-bottom: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .summary-variant-name { font-size: 10px; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 1.5px; font-family: 'Plus Jakarta Sans', sans-serif; }
+        
         /* Related Products Section */
-        .related-swiper { padding: 5px 0 20px; }
-        .related-card { border: 1px solid #eee; border-radius: 12px; overflow: hidden; background: #fff; height: 100%; display: flex; flex-direction: column; transition: transform 0.2s; }
-        .related-card:active { transform: scale(0.98); }
-        .related-img { width: 100%; aspect-ratio: 1/1; object-fit: cover; }
-        .related-info { padding: 12px; flex: 1; display: flex; flex-direction: column; gap: 4px; }
-        .related-name { font-size: 11px; font-weight: 700; color: #333; height: 32px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.4; }
-        .related-price-row { display: flex; flex-direction: column; }
-        .related-price-now { font-size: 13px; font-weight: 800; color: var(--primary); }
-        .related-price-was { font-size: 9px; color: #999; text-decoration: line-through; }
-        .related-btn { margin-top: 8px; font-size: 10px; font-weight: 800; color: #fff; text-align: center; padding: 8px; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .related-swiper { padding: 10px 0 20px; }
+        .related-card { border: 1px solid var(--border); background: var(--bg-body); height: 100%; display: flex; flex-direction: column; transition: all 0.3s; box-shadow: 4px 4px 0 rgba(0,0,0,0.04); }
+        .related-card:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 rgba(0,0,0,0.06); border-color: rgba(0,0,0,0.3); }
+        .related-img { width: 100%; aspect-ratio: 1/1; object-fit: cover; filter: sepia(0.15); border-bottom: 1px solid var(--border); padding: 4px; background: var(--bg-container); }
+        .related-info { padding: 16px; flex: 1; display: flex; flex-direction: column; gap: 10px; text-align: center; }
+        .related-name { font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 700; color: var(--text-main); height: 40px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.3; }
+        .related-price-row { display: flex; flex-direction: column; align-items: center; }
+        .related-price-now { font-size: 15px; font-weight: 700; color: var(--primary); font-family: 'Playfair Display', serif; }
+        .related-price-was { font-size: 11px; color: var(--text-muted); text-decoration: line-through; font-family: 'Playfair Display', serif; font-style: italic; }
+        .related-btn { margin-top: 12px; font-size: 10px; font-weight: 700; color: var(--bg-container); padding: 10px; text-transform: uppercase; letter-spacing: 2px; background: var(--text-main); transition: 0.2s; font-family: 'Plus Jakarta Sans', sans-serif; }
+        .related-card:hover .related-btn { background: var(--primary); }
     </style>
-</head>
+
+    <style>
+      /* Prevent selection */
+      body {
+        -webkit-user-select: none !important;
+         -moz-user-select: none !important;
+          -ms-user-select: none !important;
+              user-select: none !important;
+      }
+      /* Prevent image drag and save */
+      img {
+        -webkit-user-drag: none !important;
+        -khtml-user-drag: none !important;
+        -moz-user-drag: none !important;
+        -o-user-drag: none !important;
+        user-drag: none !important;
+        pointer-events: none !important;
+      }
+    </style>
+    </head>
 <body>
     <div class="container">
-        <div class="swiper product-swiper" id="main-slider"><div class="swiper-wrapper"><div class="swiper-slide"><img src="https://down-id.img.susercontent.com/file/id-11134207-82250-mhr3t5u7gn4489.webp" id="main-product-img" style="width:100%; height:100%; object-fit:contain;"></div><div class="swiper-slide"><img src="https://down-id.img.susercontent.com/file/id-11134207-8224z-mhr3t5u7nnyc16.webp"  style="width:100%; height:100%; object-fit:contain;"></div><div class="swiper-slide"><img src="https://down-id.img.susercontent.com/file/id-11134207-8224x-mhr3t5u7i1ok26.webp"  style="width:100%; height:100%; object-fit:contain;"></div><div class="swiper-slide"><img src="https://down-id.img.susercontent.com/file/id-11134207-8224x-mhr3t5u7p2is2c.webp"  style="width:100%; height:100%; object-fit:contain;"></div><div class="swiper-slide"><img src="https://down-id.img.susercontent.com/file/id-11134207-8224o-mhr3t5u7jg9008.webp"  style="width:100%; height:100%; object-fit:contain;"></div><div class="swiper-slide"><img src="https://down-id.img.susercontent.com/file/id-11134207-8224o-mhr3t5u7kutg35.webp"  style="width:100%; height:100%; object-fit:contain;"></div><div class="swiper-slide"><img src="https://down-id.img.susercontent.com/file/id-11134207-8224o-mhr3t5u7qh381b.webp"  style="width:100%; height:100%; object-fit:contain;"></div></div><div class="swiper-pagination"></div></div>
+        <div class="swiper product-swiper" id="main-slider"><div class="swiper-wrapper"><div class="swiper-slide"><img src="https://cdn.orderonline.id/uploads/images_8948681783509640119.png" id="main-product-img" style="width:100%; height:100%; object-fit:contain;"></div><div class="swiper-slide"><img src="https://down-id.img.susercontent.com/file/id-11134207-8224q-mhzur3ouw3k0eb.webp"  style="width:100%; height:100%; object-fit:contain;"></div><div class="swiper-slide"><img src="https://ae01.alicdn.com/kf/S8905eb1271754a59b0a871afe5d44594f.jpg"  style="width:100%; height:100%; object-fit:contain;"></div><div class="swiper-slide"><img src="https://ae01.alicdn.com/kf/S77e169540b224b3fb127c8e8a94bdc3d9.jpg"  style="width:100%; height:100%; object-fit:contain;"></div><div class="swiper-slide"><img src="https://ae01.alicdn.com/kf/S88e81975c7cc4a0ea54940f616cbab11l.jpg"  style="width:100%; height:100%; object-fit:contain;"></div><div class="swiper-slide"><img src="https://ae01.alicdn.com/kf/S5a862d2d53bf47cdaf222754639faf8eJ.jpg?width=1000&height=1000&hash=2000"  style="width:100%; height:100%; object-fit:contain;"></div></div><div class="swiper-pagination"></div></div>
         
         
-        <div class="flash-sale-bar" style="background: #002e1c;">
+        <div class="flash-sale-bar" style="background: #000a94; border-bottom: 3px double var(--accent);">
             <div class="fs-left">
                 <div class="fs-label">FLASH SALE!</div>
-                <div class="fs-subtext">PROMO SPESIAL HARI INI</div>
+                <div class="fs-subtext">PENAWARAN KLASIK TERBATAS</div>
             </div>
             <div class="fs-right">
                 <div class="fs-timer-label"><i class="fas fa-clock"></i> BERAKHIR DALAM</div>
@@ -123,26 +161,30 @@
         </div>
 
         <div class="p-info">
-            <div class="p-price-row" style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
-                <span class="p-price-now" id="display-price">Rp 189.000</span>
-                <span class="p-price-was">Rp 378.000</span>
-                <span class="p-discount-tag">-50%</span>
+            <h1 class="p-title">WALL MOUNTED HAT RACK, DISPLAY HANGER</h1>
+            <div class="p-price-row">
+                <span class="p-price-now" id="display-price">Rp 174.000</span>
+                
+                <span class="p-price-was">Rp 360.000</span>
+                <span class="p-discount-tag">HEMAT 52%</span>
             </div>
-            <h1 class="p-title">GRENEY-4Pcs CD Renda Pinggang Karet Huruf-Renda</h1>
             
-            <div style="font-size: 11px; color: #757575; display:flex; align-items:center; gap:8px;">
-                <span style="color:#f1c40f">★</span> 4.9 
-                <span style="color:#ddd">|</span> 1.2RB Penilaian 
-                <span style="color:#ddd">|</span> 2.5RB+ Terjual
+            
+            <div style="font-size: 11px; color: var(--text-muted); display:flex; align-items:center; justify-content:center; gap:12px; font-weight: 700; font-family: 'Plus Jakarta Sans', sans-serif; letter-spacing: 1px;">
+                <span><span style="color:var(--accent)">★</span> 4.9</span>
+                <span style="color:var(--border)">|</span> 
+                <span>1.2RB ULASAN</span>
+                <span style="color:var(--border)">|</span> 
+                <span>2.5RB+ TERJUAL</span>
             </div>
         </div>
 
         <!-- Store Info Section -->
         <div class="shop-section">
-            <img src="https://down-id.img.susercontent.com/file/id-11134216-7ra0m-mca0k1e7sy5a00@resize_w80_nl.webp" class="shop-logo">
+            <img src="https://cdn.orderonline.id/uploads/images_2646211768233242426.png" class="shop-logo">
             <div class="shop-info">
-                <div class="shop-name">Greney Official Store</div>
-                <div class="shop-meta">Aktif 1 jam lalu | Kota Jakarta</div>
+                <div class="shop-name">Official Lyodra Shop</div>
+                <div class="shop-meta" style="display: flex; align-items: center; gap: 4px;"><span style="color: #22c55e; font-size: 8px; line-height: 1;">●</span> Aktif &bull; Pengiriman dari Kota Jakarta</div>
             </div>
         </div>
 
@@ -154,33 +196,18 @@
                 <div class="shipping-title" id="dynamic-shipping-date">Garansi Tiba: ...</div>
                 <div class="shipping-desc">Dapatkan Jaminan Ongkir s/d 20RB</div>
             </div>
-            <i class="fas fa-chevron-right" style="color:#ccc; font-size:10px;"></i>
+            <i class="fas fa-chevron-right" style="color:var(--border); font-size:14px;"></i>
         </div>
 
-        <div style="background: #fff; border-bottom: 8px solid #f1f1f1;">
+        <div style="background: transparent;">
             <div class="dropdown-trigger active" onclick="toggleDropdown(this)">DESKRIPSI PRODUK <i class="fas fa-chevron-down"></i></div>
-            <div class="dropdown-content active">• Desain renda elegan dengan ban pinggang trendy untuk tampilan lebih modis.
-• Bahan lembut dan breathable yang nyaman dipakai sepanjang hari tanpa iritasi.
-• Karet pinggang elastis yang fleksibel dan tidak meninggalkan bekas pada kulit.
-• Paket hemat isi 4 pcs berkualitas premium untuk penggunaan jangka panjang.
-
-1. 7 hari bebas return/refund
-2. Jaminan asli 100%
-3.Kain teknologi paten
-
-** Ketentuan Penukaran Produk :
-
-– Menyertakan Video Unboxing pembukaan paket
-– Paket tidak lebih dari 1 minggu ( dari sejak paket diterima )
-– Tag produk masih utuh ( apabila copot , tidak diterima )
-– Produk tidak reject / kotor ( apabila paket sampai di kami , akan ada QC produk untuk proses penukaran )
-
-Jika Anda menerima paket dan pengiriman kurang atau salah, jangan khawatir, silakan chat Admin, gudang memiliki video paket yang dapat dicek, jika video menunjukkan barang paket tersebut memang hilang, kami akan mengembalikan dana pada waktunya.
-
-</div>
+            <div class="dropdown-content active">•  Ruangan rapi, topi tertata, bebas kusut.
+•  Maksimalkan dinding, hemat ruang penyimpanan.
+•  Pamerkan koleksi topi dengan sentuhan gaya.
+•  Akses mudah, topi favorit selalu terjangkau.</div>
             
             <div class="dropdown-trigger" onclick="toggleDropdown(this)">PANDUAN UKURAN <i class="fas fa-chevron-down"></i></div>
-            <div class="dropdown-content">Pilih ukuran Anda.<img src="https://down-id.img.susercontent.com/file/sg-11134201-822wp-mhx87owqns3k98.webp" style="width:100%; margin-top:10px; border-radius:4px;"></div>
+            <div class="dropdown-content">Pilih ukuran Anda.</div>
             <div class="dropdown-trigger" onclick="toggleDropdown(this)">SPESIFIKASI TEKNIS <i class="fas fa-chevron-down"></i></div>
             <div class="dropdown-content">Bahan: Premium Quality
 Stok: Tersedia
@@ -189,62 +216,38 @@ Garansi: 100% Original</div>
 
         
         <div class="s-section-features">
-            <div style="padding: 20px 15px 5px; font-weight: 800; font-size: 13px; color: #888; text-transform: uppercase; letter-spacing: 1px;">Fitur Unggulan</div>
+            <div class="vintage-divider">❖ &bull; FEATURED HIGHLIGHTS &bull; ❖</div>
             <div class="features-vertical-list">
                 
                     <div class="feature-vertical-item">
-                        <img src="https://down-id.img.susercontent.com/file/id-11134208-8224y-mhr3tvmb3z7se6" class="feature-img-large">
+                        <img src="https://cdn.orderonline.id/uploads/images_8948681783509640119.png" class="feature-img-large">
                         <div class="feature-content-large">
-                            <div class="feature-title-large"></div>
-                            <div class="feature-desc-large"></div>
+                            <div class="feature-title-large">Drill-Free Installation</div>
+                            <div class="feature-desc-large">Enjoy easy installation without damaging your walls. Your walls will remain perfect, hole-free, and ready for any move.</div>
                         </div>
                     </div>
                 
                     <div class="feature-vertical-item">
-                        <img src="https://down-id.img.susercontent.com/file/id-11134208-8224y-mhr3tvmalptvd2" class="feature-img-large">
+                        <img src="https://www.conivenient.com/cdn/image/42eb22dd5f3b1cd5193a50aa589610fb982229ed.gif" class="feature-img-large">
                         <div class="feature-content-large">
-                            <div class="feature-title-large"></div>
-                            <div class="feature-desc-large"></div>
+                            <div class="feature-title-large">Vertical Space Efficiency</div>
+                            <div class="feature-desc-large">Free up your closets and drawers. A neatly organized hat collection is easily accessible, creating a more spacious and organized space.</div>
                         </div>
                     </div>
                 
                     <div class="feature-vertical-item">
-                        <img src="https://down-id.img.susercontent.com/file/id-11134208-8224y-mhr3tvmaoiyrf6@resize_w875_nl.webp" class="feature-img-large">
+                        <img src="https://ae01.alicdn.com/kf/S7b4a053f30de4527828d6c1eff6bb9d6k.jpg?width=1000&height=1000&hash=2000" class="feature-img-large">
                         <div class="feature-content-large">
-                            <div class="feature-title-large"></div>
-                            <div class="feature-desc-large"></div>
+                            <div class="feature-title-large">Premium Collection Display</div>
+                            <div class="feature-desc-large">Turn your hat collection into an art exhibit. Each hat is kept in shape, protected from damage, and looks stunning on your wall.</div>
                         </div>
                     </div>
                 
                     <div class="feature-vertical-item">
-                        <img src="https://down-id.img.susercontent.com/file/id-11134208-8224u-mhr3tvmapxj7b6@resize_w875_nl.webp" class="feature-img-large">
+                        <img src="https://ae01.alicdn.com/kf/S5a862d2d53bf47cdaf222754639faf8eJ.jpg?width=1000&height=1000&hash=2000" class="feature-img-large">
                         <div class="feature-content-large">
-                            <div class="feature-title-large"></div>
-                            <div class="feature-desc-large"></div>
-                        </div>
-                    </div>
-                
-                    <div class="feature-vertical-item">
-                        <img src="https://down-id.img.susercontent.com/file/id-11134208-8224w-mhr3tvmarc3nae@resize_w875_nl.webp" class="feature-img-large">
-                        <div class="feature-content-large">
-                            <div class="feature-title-large"></div>
-                            <div class="feature-desc-large"></div>
-                        </div>
-                    </div>
-                
-                    <div class="feature-vertical-item">
-                        <img src="https://down-id.img.susercontent.com/file/id-11134208-8224o-mhr3tvmau58jcc@resize_w875_nl.webp" class="feature-img-large">
-                        <div class="feature-content-large">
-                            <div class="feature-title-large"></div>
-                            <div class="feature-desc-large"></div>
-                        </div>
-                    </div>
-                
-                    <div class="feature-vertical-item">
-                        <img src="https://down-id.img.susercontent.com/file/id-11134208-8224r-mhr3tvmavjsz3b@resize_w875_nl.webp" class="feature-img-large">
-                        <div class="feature-content-large">
-                            <div class="feature-title-large"></div>
-                            <div class="feature-desc-large"></div>
+                            <div class="feature-title-large">Timeless Elegant Design</div>
+                            <div class="feature-desc-large">The minimalist design blends well with modern interiors, adding an aesthetic touch to the room. Made from premium, durable materials.</div>
                         </div>
                     </div>
                 
@@ -253,71 +256,71 @@ Garansi: 100% Original</div>
 
         
         <div class="s-section">
-            <div class="s-section-header" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
-                <div class="s-section-title">PENILAIAN PRODUK</div>
-                <div style="color:#002e1c; font-size:12px; font-weight:600; cursor:pointer;">Lihat Semua ></div>
+            <div class="s-section-header" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; border-bottom: 1px dashed var(--border); padding-bottom: 12px;">
+                <div class="s-section-title" style="margin-bottom:0;">ULASAN PELANGGAN</div>
+                <div style="color:#000a94; font-size:12px; font-weight:700; cursor:pointer; font-family: 'Playfair Display', serif; font-style: italic; letter-spacing: 0.5px;">Lihat Arsip ></div>
             </div>
             <div class="s-testimonial-list">
                 
                     <div class="s-testimonial-item">
                         <div class="st-header">
-                            <img src="https://down-id.img.susercontent.com/file/id-11134233-7r98p-lzvuxdth55j956_tn" class="st-avatar">
+                            <img src="https://down-id.img.susercontent.com/file/9c64c09743ab10346deff18172982d72_tn" class="st-avatar">
                             <div class="st-user-info">
-                                <div class="st-name">Clarissa</div>
+                                <div class="st-name">Keysha</div>
                                 <div class="st-stars">★★★★★</div>
-                                <div class="st-meta"><span class="dynamic-date" data-days-ago="9"></span></div>
+                                <div class="st-meta">TERKONFIRMASI &bull; <span class="dynamic-date" data-days-ago="2"></span></div>
                             </div>
                         </div>
-                        <div class="st-text">Bahannya lembut banget, rendanya gak bikin gatal di kulit. Ukurannya pas dan karet pinggangnya elastis sesuai deskripsi. Paket sampai cepet banget, makasih ya!</div>
-                        <div class="st-media"><img src="https://down-id.img.susercontent.com/file/id-11134103-822wm-mn7cm19nmrk61f.webp" onclick="openLightbox('https://down-id.img.susercontent.com/file/id-11134103-822wm-mn7cm19nmrk61f.webp')" style="cursor:pointer;"></div>
+                        <div class="st-text">"Gila sih ini! Selama ini topi pada berserakan ditaro di mana2. Pas liat ini langsung CO. Gampang bgt masangnya, trs hasilnya rapih bgt di kamar. Topi koleksi jadi keliatan semua. Mantap lah, worth it parah sih ini!"</div>
+                        
                     </div>
                 
                     <div class="s-testimonial-item">
                         <div class="st-header">
-                            <img src="https://down-id.img.susercontent.com/file/49a577e5f56d24d82ec1f719e7cc12f1_tn" class="st-avatar">
+                            <img src="https://down-id.img.susercontent.com/file/49e6a412d10d87dfd1a54337198d61fa_tn" class="st-avatar">
                             <div class="st-user-info">
-                                <div class="st-name">Rangga</div>
+                                <div class="st-name">Farel</div>
                                 <div class="st-stars">★★★★★</div>
-                                <div class="st-meta"><span class="dynamic-date" data-days-ago="4"></span></div>
+                                <div class="st-meta">TERKONFIRMASI &bull; <span class="dynamic-date" data-days-ago="9"></span></div>
                             </div>
                         </div>
-                        <div class="st-text">Sengaja beliin buat  istri, katanya suka banget sama modelnya. Bahannya kelihatan premium dan jahitannya rapi. Packing aman dan privasi terjaga.</div>
-                        <div class="st-media"><img src="https://down-id.img.susercontent.com/file/id-11134103-8224s-mi1g6ulcvs3mdc.webp" onclick="openLightbox('https://down-id.img.susercontent.com/file/id-11134103-8224s-mi1g6ulcvs3mdc.webp')" style="cursor:pointer;"></div>
+                        <div class="st-text">"Bagus bgt nih rak topi! Kokoh, trus bikin kamar jadi makin estetik. Gak nyesel belinya. Pengiriman juga cepet bgt padahal luar kota."</div>
+                        
                     </div>
                 
                     <div class="s-testimonial-item">
                         <div class="st-header">
-                            <img src="https://down-id.img.susercontent.com/file/9fbfc414b3a23fb3022f4f59f948bb2a_tn" class="st-avatar">
+                            <img src="https://down-id.img.susercontent.com/file/04bbc8b271a386ef6b37f6f38a8bce3d_tn" class="st-avatar">
                             <div class="st-user-info">
-                                <div class="st-name">Nabila</div>
-                                <div class="st-stars">★★★★★</div>
-                                <div class="st-meta"><span class="dynamic-date" data-days-ago="9"></span></div>
+                                <div class="st-name">Amanda</div>
+                                <div class="st-stars">★★★★☆</div>
+                                <div class="st-meta">TERKONFIRMASI &bull; <span class="dynamic-date" data-days-ago="7"></span></div>
                             </div>
                         </div>
-                        <div class="st-text">Suka sama desain huruf di pinggangnya, jadi kelihatan sporty tapi tetep cantik karena ada rendanya. Isi 4 pcs harganya worth it banget untuk kualitas sebagus ini.</div>
-                        <div class="st-media"><img src="https://down-id.img.susercontent.com/file/id-11134103-8224p-mknu1zhahe6b3c.webp" onclick="openLightbox('https://down-id.img.susercontent.com/file/id-11134103-8224p-mknu1zhahe6b3c.webp')" style="cursor:pointer;"></div>
+                        <div class="st-text">"Awalnya sempet ragu pas liat harganya, tp yaudah deh coba. Eh beneran bagus dong! Topi2 jadi pada gantungan rapih. Bahannya juga lumayan kuat. Pengiriman aga lama dikit sih di kurirnya, tp barangnya mulus gapapa deh. Sesuai ekspektasi."</div>
+                        
                     </div>
                 
                     <div class="s-testimonial-item">
                         <div class="st-header">
-                            <img src="https://down-id.img.susercontent.com/file/id-11134233-81ztk-meo3j1vnmbr52d_tn" class="st-avatar">
+                            <img src="https://down-id.img.susercontent.com/file/id-11134233-7rask-m4ro07c8uqym52_tn" class="st-avatar">
                             <div class="st-user-info">
-                                <div class="st-name">Felicia</div>
+                                <div class="st-name">Zacky</div>
                                 <div class="st-stars">★★★★★</div>
-                                <div class="st-meta"><span class="dynamic-date" data-days-ago="3"></span></div>
+                                <div class="st-meta">TERKONFIRMASI &bull; <span class="dynamic-date" data-days-ago="2"></span></div>
                             </div>
                         </div>
-                        <div class="st-text">Kualitas oke punya, warnanya juga cantik-cantik sesuai foto. Pas dicuci gak luntur dan gak gampang melar. Respon penjual ramah dan pengiriman super kilat.</div>
-                        <div class="st-media"><img src="https://down-id.img.susercontent.com/file/id-11134103-822wg-mnfkb33ro3r841.webp" onclick="openLightbox('https://down-id.img.susercontent.com/file/id-11134103-822wg-mnfkb33ro3r841.webp')" style="cursor:pointer;"></div>
+                        <div class="st-text">"Akhirnya koleksi topi baseball gw ada tempatnya. Dulu bingung mau taro mana, skrg nempel rapih di dinding. Hemat tempat bgt, trs keliatan kece juga. Kualitas oke punya, fungsional parah. Rekomen!"</div>
+                        
                     </div>
                 
             </div>
         </div>
 
-        <div id="order-section" style="padding:25px 15px; background:#fff;">
+        <div id="order-section" style="padding:48px 24px; background:var(--bg-body); border-top: 1px solid var(--border);">
             <div id="variant-summary"></div>
-            <h3 style="text-align:center; font-weight:900; color:var(--primary); font-size:14px; margin-bottom:15px; text-transform:uppercase;">Formulir Pemesanan</h3>
-            <!-- OrderOnline Embed Code - v8.0.2 --> <div class="ooef"> <form class="orderonline-embed-form" data-username="luna" data-product-slug="greney-cd-renda" data-product-id="6a107b0015ef798e590acff9" id="oo-embed-form-greney-cd-renda-7600" data-origin="orderonline"> <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div> </form> </div> <script> if (typeof xLogError != 'function') { var xLogError = function (error) { var req = new XMLHttpRequest(); var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack }); var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error'; req.open('POST', 'https://api.orderonline.id/log', true); req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); req.send(params); }; } try { if (typeof xEmbedScript != 'function') { var xEmbedScript = function () { !function(w, d, e, v, id, t, s) { if (d.getElementById(id)) return; t = d.createElement(e);t.async = !0;t.src = v;t.id = id; s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.2', 'oo-embed-js'); }; } if (typeof xEmbedInit != 'function') { var xEmbedInit = function (w, n) { if (w.ooe) return; n = w.ooe = function() { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!w._ooe) w._ooe = n; n.push = n;n.loaded = !0;n.version = '8.0.2';n.queue = []; }; } xEmbedInit(window); ooe('setup', 'redirect', 'https://luna.orderonline.id'); ooe('init', '5f1133129d8e8e34501812c2', '6a107b0015ef798e590acff9', '6a107b0015ef798e590acffa', 'oo-embed-form-greney-cd-renda-7600', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false}); if (!window.jQuery) { !function(w, d, e, v, id, t, s) { if (d.getElementById(id)) return; t = d.createElement(e);t.async = !0;t.src = v;t.id = id; t.addEventListener('load', xEmbedScript); s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery'); } else { xEmbedScript(); } } catch (e) { xLogError(e); throw e; } </script> <!-- End OrderOnline Embed Code -->
+            <h3 style="text-align:center; font-family:'Playfair Display', serif; font-weight:700; color:var(--text-main); font-size:24px; margin-bottom:32px; letter-spacing:1px; line-height: 1.2;">Formulir Pemesanan<br><span style="font-size: 13px; color: var(--text-muted); font-family: 'Plus Jakarta Sans', sans-serif; font-style: italic; letter-spacing: 0; font-weight: 500; text-transform:none;">Isi data di bawah ini untuk memesan</span></h3>
+            <!-- OrderOnline Embed Code - v8.0.2 --> <div class="ooef"> <form class="orderonline-embed-form" data-username="luna" data-product-slug="mounted-hat-rack" data-product-id="6a4e31526c4e03576b0cbac6" id="oo-embed-form-mounted-hat-rack-6295" data-origin="orderonline"> <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div> </form> </div> <script> if (typeof xLogError != 'function') { var xLogError = function (error) { var req = new XMLHttpRequest(); var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack }); var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error'; req.open('POST', 'https://api.orderonline.id/log', true); req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); req.send(params); }; } try { if (typeof xEmbedScript != 'function') { var xEmbedScript = function () { !function(w, d, e, v, id, t, s) { if (d.getElementById(id)) return; t = d.createElement(e);t.async = !0;t.src = v;t.id = id; s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.2', 'oo-embed-js'); }; } if (typeof xEmbedInit != 'function') { var xEmbedInit = function (w, n) { if (w.ooe) return; n = w.ooe = function() { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!w._ooe) w._ooe = n; n.push = n;n.loaded = !0;n.version = '8.0.2';n.queue = []; }; } xEmbedInit(window); ooe('setup', 'redirect', 'https://luna.orderonline.id'); ooe('init', '5f1133129d8e8e34501812c2', '6a4e31526c4e03576b0cbac6', '6a4e31526c4e03576b0cbac7', 'oo-embed-form-mounted-hat-rack-6295', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false}); if (!window.jQuery) { !function(w, d, e, v, id, t, s) { if (d.getElementById(id)) return; t = d.createElement(e);t.async = !0;t.src = v;t.id = id; t.addEventListener('load', xEmbedScript); s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery'); } else { xEmbedScript(); } } catch (e) { xLogError(e); throw e; } </script> <!-- End OrderOnline Embed Code -->
         </div>
 
         
@@ -367,15 +370,13 @@ Garansi: 100% Original</div>
 
             const summary = document.getElementById('variant-summary');
             if (summary) {
-              // Fixed: Escape backticks to prevent premature termination of outer template literal
               summary.innerHTML = `
                 <div class="summary-card">
                     <img src="${image}" class="summary-img">
                     <div class="summary-info">
-                        <div class="summary-title">GRENEY-4Pcs CD Renda Pinggang Karet Huruf-Renda</div>
+                        <div class="summary-title">WALL MOUNTED HAT RACK, DISPLAY HANGER</div>
                         <div class="summary-variant-name">${name}</div>
                     </div>
-                    <i class="fas fa-check-circle summary-check"></i>
                 </div>`;
             }
         }
@@ -468,5 +469,368 @@ Garansi: 100% Original</div>
             }
         });
     </script>
-</body>
+
+    <style>
+      .sp-toast {
+        position: fixed;
+        
+        bottom: 24px;
+        left: 24px;
+      
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px) saturate(180%);
+        -webkit-backdrop-filter: blur(12px) saturate(180%);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 16px;
+        padding: 10px 14px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        z-index: 10000;
+        width: calc(100% - 32px);
+        max-width: 310px;
+        display: none;
+        opacity: 0;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      
+      
+        @keyframes sp-slide-in-bl {
+          from {
+            opacity: 0;
+            transform: translateY(40px) translateX(-20px) scale(0.92);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0) translateX(0) scale(1);
+          }
+        }
+        @keyframes sp-slide-out-bl {
+          from {
+            opacity: 1;
+            transform: translateY(0) translateX(0) scale(1);
+          }
+          to {
+            opacity: 0;
+            transform: translateY(30px) translateX(-15px) scale(0.95);
+          }
+        }
+        .sp-toast.show {
+          display: block;
+          animation: sp-slide-in-bl 0.50s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        .sp-toast.hide {
+          display: block;
+          animation: sp-slide-out-bl 0.50s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+      
+      
+      @media (max-width: 500px) {
+        .sp-toast {
+          bottom: 90px !important; left: 16px !important; right: 16px !important; width: calc(100% - 32px) !important;
+          
+          max-width: none !important;
+          transform: none !important;
+        }
+      }
+    
+
+      .sp-toast-content {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .sp-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2.5px solid #000a94;
+        flex-shrink: 0;
+      }
+      .sp-toast-text {
+        flex: 1;
+        min-width: 0;
+      }
+      .sp-toast-name-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2px;
+      }
+      .sp-name {
+        font-weight: 800;
+        font-size: 12.5px;
+        color: #0f172a;
+      }
+      .sp-verified {
+        font-size: 9px;
+        font-weight: 700;
+        color: #059669;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+      }
+      .sp-message {
+        font-size: 11px;
+        color: #334155;
+        line-height: 1.35;
+        font-weight: 500;
+      }
+      .sp-time {
+        font-size: 9px;
+        color: #64748b;
+        margin-top: 4px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+      
+      /* Dark theme specific override */
+      .dark-theme-sp {
+        background: rgba(15, 23, 42, 0.6);
+        border-color: rgba(255, 255, 255, 0.08);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      }
+      .dark-theme-sp .sp-name {
+        color: #ffffff;
+      }
+      .dark-theme-sp .sp-message {
+        color: #e2e8f0;
+      }
+      .dark-theme-sp .sp-time {
+        color: #94a3b8;
+      }
+    </style>
+    
+    <div id="social-proof-toast" class="sp-toast ">
+      <div class="sp-toast-content">
+        
+        <div class="sp-toast-text">
+          <div class="sp-toast-name-row">
+            <span id="sp-name" class="sp-name"></span>
+            <span class="sp-verified"><i class="fas fa-check-circle"></i> Terverifikasi</span>
+          </div>
+          <div id="sp-message" class="sp-message"></div>
+          <div id="sp-time" class="sp-time"></div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      (function() {
+        const namesStr = "Keysha, Farel, Aurelia, Zacky, Syifa, Kevin, Nabila, Daniel, Natasha, Raditya, Sherly, Satria, Amanda, Dimas, Farah, Bayu, Gisella, Reyhan, Safira, Alvin, Clarissa, Rio, Bella, Rizky, Aliyah, Arka, Chelsea, Rangga, Vania, Galih, Sherina, Bagas, Rachel, Hanif, Amara, Farhan, Karina, Dian, Desi, Fauzan, Wulan, Aldi, Desinta, Akbar, Tiara, Luthfi, Dinda, Bobby, Nadya, Hendra, Tasya, Gibran, Nayla, Yoga, Zahra, Arya, Intan, Kadek, Gita, Wayan, Novi, Made, Fitri, Nyoman";
+        const citiesStr = "Jakarta, Surabaya, Bandung, Medan, Bekasi, Tangerang, Depok, Semarang, Makassar, Palembang, Bogor, Malang, Yogyakarta, Denpasar, Solo, Pekanbaru";
+        
+        const names = namesStr.split(',').map(function(x) { return x.trim(); }).filter(Boolean);
+        const cities = citiesStr.split(',').map(function(x) { return x.trim(); }).filter(Boolean);
+        
+        if (names.length === 0 || cities.length === 0) return;
+
+        const intervalSec = 8;
+        const durationSec = 5;
+        const customProductName = "MOUNTED HAT RACK";
+        const productName = customProductName.trim() ? customProductName : "WALL MOUNTED HAT RACK, DISPLAY HANGER";
+        const avatarType = "cowok";
+        const statusText = "baru saja memesan";
+        const brandColor = "#000a94";
+
+        const cowokAvatars = [
+          'photo-1507003211169-0a1dd7228f2d', 'photo-1500648767791-00dcc994a43e', 'photo-1539571696357-5a69c17a67c6',
+          'photo-1519085360753-af0119f7cbe7', 'photo-1506794778202-cad84cf45f1d', 'photo-1492562080023-ab3db95bfbce',
+          'photo-1544005313-94ddf0286df2', 'photo-1501196354995-cbb51c65aaea', 'photo-1522075469751-3a6694fb2f61',
+          'photo-1542206395-9feb3edaa68d', 'photo-1560250097-0b93528c311a', 'photo-1531427186611-ecfd6d936c79',
+          'photo-1489980508314-941910ded1f4', 'photo-1513956589380-bad6acb9b9d4', 'photo-1506803682981-6e718a9dd3ee'
+        ];
+
+        const cewekAvatars = [
+          'photo-1534528741775-53994a69daeb', 'photo-1517841905240-472988babdf9', 'photo-1544005313-94ddf0286df2',
+          'photo-1494790108377-be9c29b29330', 'photo-1524504388940-b1c1722653e1', 'photo-1531746020798-e6953c6e8e04',
+          'photo-1554151228-14d9def656e4', 'photo-1580489944761-15a19d654956', 'photo-1614283233556-f35b0c801ef1',
+          'photo-1567532939604-b6b5b0db2604', 'photo-1438761681033-6461ffad8d80', 'photo-1508214751196-bcfd4ca60f91',
+          'photo-1544717305-2782549b5136', 'photo-1525134479668-1bee5c7c6845', 'photo-1531123897727-8f129e1688ce'
+        ];
+
+        const hijabAvatars = [
+          'photo-1607746882042-944635dfe10e', 'photo-1568602471122-7832951cc4c5', 'photo-1606132711719-79f9fefe8dcc',
+          'photo-1589156280159-27698a70f29e', 'photo-1573496359142-b8d87734a5a2', 'photo-1511556532299-8f662fc26c06',
+          'photo-1588516903720-8ceb67f9ef84', 'photo-1504933350103-e840ede978d5', 'photo-1618220179428-22790b461013',
+          'photo-1590086782957-93c06ef217b4'
+        ];
+
+        const waAvatars = [
+          'photo-1534308983496-4fabb1a015ee', 'photo-1535713875002-d1d0cf377fde', 'photo-1570295999919-56ceb5ecca61',
+          'photo-1494790108377-be9c29b29330', 'photo-1599566150163-29194dcaad36', 'photo-1507003211169-0a1dd7228f2d',
+          'photo-1438761681033-6461ffad8d80', 'photo-1607990283143-e81e7a2c93ab', 'photo-1543610892-0b1f7e6d8ac1',
+          'photo-1527980965255-d3b416303d12'
+        ];
+
+        function isFemale(name) {
+          if (!name) return false;
+          var lower = name.toLowerCase().trim();
+          
+          // Famous indonesian female triggers
+          var femaleSet = {
+            'siti': true, 'amanda': true, 'indah': true, 'jessica': true, 'syifa': true, 'anisa': true, 'dian': true, 'fitri': true, 
+            'hesti': true, 'ika': true, 'kiki': true, 'mega': true, 'putri': true, 'ratna': true, 'utami': true, 'dewi': true, 'sri': true, 
+            'bella': true, 'nisa': true, 'rina': true, 'sari': true, 'wati': true, 'santi': true, 'kartika': true, 'amalia': true, 
+            'lia': true, 'ria': true, 'dhea': true, 'aulia': true, 'ayu': true, 'intan': true, 'angel': true, 'chandra': true, 
+            'cantika': true, 'lisa': true, 'novi': true, 'sarah': true, 'mey': true, 'meylani': true, 'selvi': true, 'selvia': true, 
+            'linda': true, 'yani': true, 'ani': true, 'erika': true, 'elizabeth': true, 'rachel': true, 'clara': true, 'nadia': true, 
+            'nadya': true, 'fani': true, 'fanny': true, 'tari': true, 'ndah': true, 'nia': true, 'grace': true, 'sherly': true,
+            'shinta': true, 'marta': true, 'maria': true, 'keisha': true, 'aurora': true, 'nayla': true, 'zahra': true,
+            'aisyah': true, 'khadijah': true, 'fatimah': true, 'salma': true, 'maharani': true, 'puji': true, 'asri': true, 
+            'nurul': true, 'safira': true, 'keyla': true, 'chika': true
+          };
+
+          var words = lower.split(/s+/);
+          for (var i = 0; i < words.length; i++) {
+            if (femaleSet[words[i]]) return true;
+          }
+
+          var femaleTriggers = [
+            'siti', 'amanda', 'indah', 'jessica', 'syifa', 'anisa', 'dian', 'fitri', 
+            'hesti', 'ika', 'kiki', 'mega', 'putri', 'ratna', 'utami', 'dewi', 'sri', 
+            'bella', 'nisa', 'rina', 'sari', 'wati', 'santi', 'kartika', 'amalia', 
+            'lia', 'ria', 'dhea', 'aulia', 'ayu', 'intan', 'angel', 'chandra', 
+            'cantika', 'lisa', 'novi', 'sarah', 'mey', 'meylani', 'selvi', 'selvia', 
+            'linda', 'yani', 'ani', 'erika', 'elizabeth', 'rachel', 'clara', 'nadia', 
+            'nadya', 'fani', 'fanny', 'tari', 'ndah', 'nia'
+          ];
+
+          for (var j = 0; j < femaleTriggers.length; j++) {
+            if (lower.indexOf(femaleTriggers[j]) !== -1) {
+              if (lower.indexOf('saputra') !== -1 || lower.indexOf('putra') !== -1 || lower.indexOf('budi') !== -1) {
+                return false;
+              }
+              return true;
+            }
+          }
+
+          if (lower.endsWith('ti') || lower.endsWith('ni') || lower.endsWith('mi') || lower.endsWith('na') || lower.endsWith('ya') || lower.endsWith('sa')) {
+            var maleExceptions = ['budi', 'ari', 'andri', 'hendri', 'heri', 'feri', 'fandy', 'billy', 'rudi', 'yudi', 'dedi', 'roni', 'tony', 'joni', 'adi', 'aldi', 'hadi', 'fauzi', 'fikri', 'fahmi', 'boby', 'dani', 'deni', 'doni', 'rony', 'ali', 'reza'];
+            if (maleExceptions.some(function(exp) { return lower.endsWith(exp) || lower === exp; })) {
+              return false;
+            }
+            return true;
+          }
+
+          return false;
+        }
+
+        var toast = document.getElementById('social-proof-toast');
+        var avatarImg = document.getElementById('sp-avatar');
+        var nameEl = document.getElementById('sp-name');
+        var messageEl = document.getElementById('sp-message');
+        var timeEl = document.getElementById('sp-time');
+
+        if (!toast || !nameEl || !messageEl || !timeEl) return;
+
+        function getRandomItem(arr) {
+          return arr[Math.floor(Math.random() * arr.length)];
+        }
+
+        // Keep track of shown names to make it look even more authentic
+        var remainingNames = names.slice();
+        var remainingCities = cities.slice();
+
+        function showSocialProof() {
+          if (remainingNames.length === 0) remainingNames = names.slice();
+          if (remainingCities.length === 0) remainingCities = cities.slice();
+
+          // Pick and remove
+          var nameIdx = Math.floor(Math.random() * remainingNames.length);
+          var name = remainingNames.splice(nameIdx, 1)[0];
+
+          var cityIdx = Math.floor(Math.random() * remainingCities.length);
+          var city = remainingCities.splice(cityIdx, 1)[0];
+
+          var nameIsFemale = isFemale(name);
+          var photoId = '';
+
+          if (nameIsFemale) {
+            if (avatarType === 'hijab') {
+              photoId = getRandomItem(hijabAvatars);
+            } else if (avatarType === 'cewek') {
+              photoId = getRandomItem(cewekAvatars);
+            } else if (avatarType === 'wa') {
+              photoId = getRandomItem(cewekAvatars.concat(hijabAvatars));
+            } else {
+              photoId = getRandomItem(cewekAvatars);
+            }
+          } else {
+            if (avatarType === 'wa') {
+              photoId = getRandomItem(waAvatars);
+            } else if (avatarType === 'hijab') {
+              photoId = getRandomItem(hijabAvatars); // fallback to hijab if female name, male name fallback?
+            } else {
+              photoId = getRandomItem(cowokAvatars);
+            }
+          }
+          
+          // Formulate avatar URL nicely sized and squared
+          if (avatarImg && photoId) {
+            var avatarUrl = 'https://images.unsplash.com/' + photoId + '?auto=format&fit=crop&w=120&h=120&q=80';
+            avatarImg.src = avatarUrl;
+          }
+          
+          nameEl.innerText = name;
+          messageEl.innerHTML = 'dari <strong style="color: ' + brandColor + '; font-weight:700;">' + city + '</strong> ' + statusText + ' <span style="font-weight: 700;">' + productName + '</span>';
+          
+          var minutesAgo = Math.floor(Math.random() * 15) + 1;
+          timeEl.innerHTML = '<i class="fas fa-clock"></i> &nbsp;' + (minutesAgo === 1 ? 'Baru saja' : minutesAgo + ' menit yang lalu');
+
+          // Trigger show with animation
+          toast.style.display = 'block';
+          toast.classList.remove('hide');
+          toast.classList.add('show');
+
+          // Hide after duration
+          setTimeout(function() {
+            toast.classList.remove('show');
+            toast.classList.add('hide');
+            setTimeout(function() {
+              if (toast.classList.contains('hide') && !toast.classList.contains('show')) {
+                toast.style.display = 'none';
+              }
+            }, 400);
+          }, durationSec * 1000);
+        }
+
+        // Delay starting social proof popups to let user settle in
+        setTimeout(function() {
+          showSocialProof();
+          setInterval(showSocialProof, intervalSec * 1000);
+        }, 1200);
+      })();
+    </script>
+    
+    <script>
+      // Disable right-click context menu
+      document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+      }, false);
+      
+      // Disable inspect element shortcut keys
+      document.addEventListener('keydown', function(e) {
+        if (
+          e.key === 'F12' || 
+          (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i' || e.key === 'C' || e.key === 'c' || e.key === 'J' || e.key === 'j')) ||
+          (e.ctrlKey && (e.key === 'U' || e.key === 'u'))
+        ) {
+          e.preventDefault();
+        }
+      }, false);
+
+      // Disable image dragging and selectstart events
+      document.addEventListener('dragstart', function(e) {
+        if (e.target.tagName === 'IMG') {
+          e.preventDefault();
+        }
+      }, false);
+      
+      document.addEventListener('selectstart', function(e) {
+        e.preventDefault();
+      }, false);
+    </script>
+    </body>
 </html>
